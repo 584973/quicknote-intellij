@@ -44,6 +44,7 @@ dependencies {
         // Plugin Dependencies. Uses `platformPlugins` property from the gradle.properties file for plugin from JetBrains Marketplace.
         plugins(providers.gradleProperty("platformPlugins").map { it.split(',') })
 
+        plugin("IdeaVIM:2.19.0")
         testFramework(TestFrameworkType.Platform)
     }
 }
