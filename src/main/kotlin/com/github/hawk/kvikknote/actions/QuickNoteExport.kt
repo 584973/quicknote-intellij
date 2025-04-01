@@ -5,6 +5,7 @@ import com.intellij.notification.NotificationType
 import com.intellij.notification.Notifications
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
+import com.intellij.openapi.fileEditor.FileDocumentManager
 import java.io.File
 
 class QuickNoteExport : AnAction("Export quicknote") {
@@ -16,6 +17,8 @@ class QuickNoteExport : AnAction("Export quicknote") {
             notifyFileNotFound()
             return
         }
+
+        FileDocumentManager.getInstance().saveAllDocuments()
 
         val homeDir = System.getProperty("user.home")
         val exportFile = File(homeDir, "${project.name}_quicknote.md")
