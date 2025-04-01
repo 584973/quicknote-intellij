@@ -1,4 +1,4 @@
-package com.github.hawk.quicknote
+package com.github.hawk.quicknote.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
@@ -7,7 +7,7 @@ import com.intellij.openapi.fileEditor.OpenFileDescriptor
 import com.intellij.openapi.vfs.LocalFileSystem
 import java.io.File
 
-class QuickNoteAction : AnAction("Quick Note") {
+class QuickNoteOpen : AnAction("Open quicknote") {
     override fun actionPerformed(p0: AnActionEvent) {
         val project = p0.project ?: return
         val noteFile = File(project.basePath ?: return, ".idea/quicknote.md")
