@@ -1,19 +1,19 @@
 <idea-plugin>
-    <id>com.github.hawk.quicknote</id>
-    <name>quicknote-ideavim</name>
+    <id>com.github.hawk.kvikknote</id>
+    <name>KVIKKNOTE</name>
     <vendor>584973</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
         <action id="QuickNoteOpen"
-                class="com.github.hawk.quicknote.actions.QuickNoteOpen"
+                class="com.github.hawk.kvikknote.actions.QuickNoteOpen"
                 text="Opens QuickNote"
                 description="Open a markdown note for this project">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
         <action id="QuickNoteExport"
-                class="com.github.hawk.quicknote.actions.QuickNoteExport"
+                class="com.github.hawk.kvikknote.actions.QuickNoteExport"
                 text="Export QuickNote"
                 description="Copy the current project note to your home directory">
             <add-to-group group-id="ToolsMenu" anchor="last"/>

@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# quicknote-intellij Changelog
+# kvikknote Changelog
 
 ## [Unreleased]
 ### Added

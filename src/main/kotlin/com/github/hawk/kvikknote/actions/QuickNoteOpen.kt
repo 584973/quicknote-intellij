@@ -1,4 +1,4 @@
-package com.github.hawk.quicknote.actions
+package com.github.hawk.kvikknote.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent

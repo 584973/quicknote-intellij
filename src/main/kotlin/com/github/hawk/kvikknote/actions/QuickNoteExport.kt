@@ -1,4 +1,4 @@
-package com.github.hawk.quicknote.actions
+package com.github.hawk.kvikknote.actions
 
 import com.intellij.notification.Notification
 import com.intellij.notification.NotificationType
