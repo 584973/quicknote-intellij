@@ -18,6 +18,21 @@
                 description="Copy the current project note to your home directory">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
+        <action id="QuickNoteObsidianExport"
+                class="com.github.hawk.kvikknote.actions.QuickNoteObsidianExport"
+                text="Export QuickNote to Obsidian"
+                description="Copy the current project note to your obisidian vault">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
     </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable instance="com.github.hawk.kvikknote.settings.KvikknoteSettingsConfigurable"
+                                 displayName="Kvikknote"/>
+
+        <projectService
+                serviceImplementation="com.github.hawk.kvikknote.settings.KvikknoteSettings"/>
+
+    </extensions>
 
 </idea-plugin>
